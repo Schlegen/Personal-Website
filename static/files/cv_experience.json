@@ -1,0 +1,16 @@
+[
+    {
+        "date": "November 2023 - Now",
+        "place": "Milan, Italy",
+        "institution": "RFF-CMCC European Institute on Economics and the Environment",
+        "position": "Research Engineer",
+        "tasks": ["task 1", "task 2"]
+    },
+    {
+        "date": "April 2022 - June 2023",
+        "place": "Paris, France",
+        "institution": "Citepa",
+        "position": "Project Engineer",
+        "tasks": ["task 1", "task 2"]
+    }
+]

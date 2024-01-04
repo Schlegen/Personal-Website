@@ -1,36 +1,73 @@
-.date {
-  display:block;
-  color: #303030;
-  font-size: 20px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.title{
-  color: #1377BD;
-  font-size: 16px;
-  margin: 4px;
-  font-weight:500;
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
-.title:hover {
-  text-decoration: none !important;
+.line {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  margin-left: 0px;
+  z-index: 0;
 }
 
-.content{
-  display:block;
-  color: #303030;
-  margin:4px;
-  font-weight:300;
+.dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #3498db;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
-.container{
-  max-width:750px;
+.date-dot-position {
+  display: flex;
+  align-items: center;
+  margin-left: -20px;
 }
 
-.icon-title{
-    display: flex;
-    align-items: center;
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  z-index: 2;
 }
 
-.list {
-  list-style-type:none;
+.right-content {
+  position: relative;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.left-content {
+  margin-right: 20px; /* Adjust the spacing between date and dot */
+  white-space: nowrap;
+  font-size: 14px;
+  color: #777;
+  margin-left: -150px; 
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+  color: #333;
 }
