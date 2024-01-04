@@ -7,21 +7,20 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 common = {
-    'first_name': 'Peter',
-    'last_name': 'Parker',
-    'alias': 'spiderman'
+    'first_name': 'Nicolas',
+    'last_name': 'Schlegel',
+    'alias': 'schlegen'
 }
-
 
 @app.route('/')
 def index():
     return render_template('home.html', common=common)
 
 
-@app.route('/timeline')
-def timeline():
-    timeline = get_static_json("static/files/timeline.json")
-    return render_template('timeline.html', common=common, timeline=timeline)
+@app.route('/cv')
+def cv():
+    cv = get_static_json("static/files/cv.json")
+    return render_template('cv.html', common=common, cv=cv)
 
 
 @app.route('/reading')
