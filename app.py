@@ -20,7 +20,8 @@ def index():
 @app.route('/cv')
 def cv():
     cv_experience = get_static_json("static/files/cv_experience.json")
-    return render_template('cv.html', common=common, experiences=cv_experience)
+    cv_education = get_static_json("static/files/cv_education.json")
+    return render_template('cv.html', common=common, experiences=cv_experience, education=cv_education)
 
 
 @app.route('/reading')

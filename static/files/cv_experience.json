@@ -1,16 +1,50 @@
 [
     {
-        "date": "November 2023 - Now",
+        "date": "Nov. 2023 - Now",
         "place": "Milan, Italy",
-        "institution": "RFF-CMCC European Institute on Economics and the Environment",
+        "institution": "RFF-CMCC European Institute on Economics and the Environment (Research laboratory)",
         "position": "Research Engineer",
-        "tasks": ["task 1", "task 2"]
+        "tasks": ["Involved of the continuous improvement of the integrated assessment model WITCH", 
+                  "In charge of the modeling of industrial sectors energy demand"]
     },
     {
         "date": "April 2022 - June 2023",
         "place": "Paris, France",
-        "institution": "Citepa",
-        "position": "Project Engineer",
-        "tasks": ["task 1", "task 2"]
+        "institution": "Citepa (Air pollution center)",
+        "position": "Project Engineer in Applied Mathematics",
+        "tasks": ["Developed a Python library for planning and optimising the decarbonisation of economic agents under uncertainty",
+                "Analysed French corporate carbon footprint database, assessed the carbon imprint of a major bank portfolio",
+                "Developed visualisation tools for corporate carbon footprints comparison"
+            ]
+    }
+    ,
+    {
+        "date": "Jan. 2021 - July 2021",
+        "place": "Paris, France",
+        "institution": "EDF R&D / LIP6 (Computer laboratory)",
+        "position": "Operations Research Intern",
+        "tasks": ["Worked on a Vehicle Routing Problem for Enedis (French network operator), modelling the tours of its technicians",
+                 "Implemented special constraints of synchronisation and teamwork",
+                "Explored an heuristic solving approach of \"graph decimation\""]
+    }
+    ,
+    {
+        "date": "June 2020 - Dec. 2020",
+        "place": "Paris, France",
+        "institution": "Artelys (Optimization consulting firm)",
+        "position": "Data Science Intern",
+        "tasks": ["Generated test years of climate hazards and electricity demand for network adequacy assessment",
+                 "Assessed the French 2050 demand for voltage transformers",
+                 "Predicted arrival times of Parisian buses",
+                 "Developed a Monte-Carlo-Tree-Search algorithm for flight trajectory planning"
+            ]
+    }
+    ,
+    {
+        "date": "June 2019 - Aug. 2019",
+        "place": "Paris, France",
+        "institution": "Thales Training and Simulation ",
+        "position": "Software Development Intern",
+        "tasks": ["Designed and animated helicopter simulator panels"]
     }
 ]
