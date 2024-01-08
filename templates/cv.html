@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block head %}
-<meta charset="utf8">
+<meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/cv.css') }}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,64 +11,78 @@
 
 
 {% block body %}
-<section>
-  <h2>About me</h2>
-  <p class="presentation">
-    I am a French Engineer with a background in Applied Mathematics.</br>
-    My fields of interest are Applied Mathematics (Data Science, Operations Research), Environment Sciences and Economy. </br>
-    Today, I work as a research associate at RFF-CMCC European Institute on Economics and the Environment. </br>
-  </p> 
-</section>
-
-<section>
-  <h2>Fields of interest</h2>
-
-</section>
-
-<section>
-  <h2>Work experience</h2> 
-  <div class="timeline">
-    {% for exp in experiences %}
-      <div class="entry">
-        <div class="title">
-          <h3>{{ exp.date }}</h3>
-          <p> {{ exp.place }}</p>
-        </div>
-        <div class="body">
-          <p class="position">{{ exp.position }}</p>
-          <p>{{ exp.institution }}</p>
-          <ul>
-            {% for task in exp.tasks%}
-              <li>{{ task }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+<div class="cv-body">
+  <div class="row">
+  <div class="col col1">
+    <div class="content">
+      <div class="image">
+        <!-- <img class="personal-image" src="/static/images/photo.png", width="10%"> -->
       </div>
-    {% endfor %}
-  </div>
-</section>
 
-<section>
-  <h2>Education</h2> 
-  <div class="timeline">
-    {% for exp in education%}
-      <div class="entry">
-        <div class="title">
-          <h3>{{ exp.date }}</h3>
-          <p> {{ exp.place }}</p>
-        </div>
-        <div class="body">
-          <p class="position">{{ exp.position }}</p>
-          <p>{{ exp.institution }}</p>
-          <ul>
-            {% for task in exp.tasks%}
-              <li>{{ task }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+      <section>
+        <h2>About me</h2>
+        <p class="presentation" >
+          
+          I am a French Engineer with a background in Applied Mathematics.</br>
+          My fields of interest are Applied Mathematics (Data Science, Operations Research), </br> 
+          Environment Sciences and Economy. </br>
+          Today, I work as a research associate at </br>
+          RFF-CMCC European Institute on Economics and the Environment. </br>
+        </p> 
+      </section>
+    </div>
+  </div>
+  <div class="col col1bis">
+  </div>
+  <div class="col col2">
+    <section>
+      <h2>Fields of interest</h2>
+    </section>
+    <section>
+      <h2>Work experience</h2> 
+      <div class="timeline">
+        {% for exp in experiences %}
+          <div class="entry">
+            <div class="title">
+              <h3>{{ exp.date }}</h3>
+              <p> {{ exp.place }}</p>
+            </div>
+            <div class="body">
+              <p class="position">{{ exp.position }}</p>
+              <p>{{ exp.institution }}</p>
+              <ul>
+                {% for task in exp.tasks%}
+                  <li>{{ task }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </section>
+    <section>
+      <h2>Education</h2> 
+      <div class="timeline">
+        {% for exp in education%}
+          <div class="entry">
+            <div class="title">
+              <h3>{{ exp.date }}</h3>
+              <p> {{ exp.place }}</p>
+            </div>
+            <div class="body">
+              <p class="position">{{ exp.position }}</p>
+              <p>{{ exp.institution }}</p>
+              <ul>
+                {% for task in exp.tasks%}
+                  <li>{{ task }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
   </div>
-</section>
-
+  </div>
+</div>
 {% endblock %}

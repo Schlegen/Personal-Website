@@ -93,7 +93,7 @@ def get_static_file(path):
 
 
 def get_static_json(path):
-    return json.load(open(get_static_file(path)))
+    return json.load(open(get_static_file(path), encoding='utf-8'))
 
 
 if __name__ == "__main__":
