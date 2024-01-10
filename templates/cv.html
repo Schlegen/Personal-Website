@@ -47,23 +47,23 @@
     <!-- About-->
     <section class="resume-section" id="about">
         <div class="resume-section-content">
-            <h1 class="mb-0">
+            <h1 class="mb-0" style="font-family: 'Roboto', sans-serif;">
                 Nicolas
                 <span class="text-primary">Schlegel</span>
             </h1>
             <div class="subheading mb-5">
-                3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                <a href="mailto:name@email.com">name@email.com</a>
+                Research engineer in applied mathematics
+                <!-- <a href="mailto:name@email.com">name@email.com</a> -->
             </div>
             <p class="lead mb-5"> I am a French Engineer with a background in Applied Mathematics.
               My fields of interest are Applied Mathematics (Data Science, Operations Research), 
               Environment Sciences and Economy.  Today, I work as a research associate at
               RFF-CMCC European Institute on Economics and the Environment. </p>
             <div class="social-icons">
-                <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com/in/nicolas-schlegel-805357177"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/schlegen"><i class="fab fa-github"></i></a>
+                <!-- <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a> -->
+                <!-- <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
             </div>
         </div>
     </section>
@@ -74,14 +74,14 @@
             <h2 class="mb-5">Experience</h2>
             <div class="timeline">
               {% for exp in experiences %}
-                <div class="entry">
-                  <div class="title">
-                    <h3>{{ exp.date }}</h3>
-                    <p> {{ exp.place }}</p>
+                <div class="cv-entry">
+                  <div class="cv-title">
+                    <h3 class="cv-date">{{ exp.date }}</h3>
+                    <p class="cv-place"> {{ exp.place }}</p>
                   </div>
-                  <div class="body">
-                    <p class="position">{{ exp.position }}</p>
-                    <p>{{ exp.institution }}</p>
+                  <div class="cv-body">
+                    <p class="cv-position">{{ exp.position }}</p>
+                    <p class="cv-institution">{{ exp.institution }}</p>
                     <ul>
                       {% for task in exp.tasks%}
                         <li>{{ task }}</li>
@@ -100,14 +100,14 @@
             <h2 class="mb-5">Education</h2>
             <div class="timeline">
               {% for exp in education%}
-                <div class="entry">
-                  <div class="title">
-                    <h3>{{ exp.date }}</h3>
-                    <p> {{ exp.place }}</p>
+                <div class="cv-entry">
+                  <div class="cv-title">
+                    <h3 class="cv-date">{{ exp.date }}</h3>
+                    <p class="cv-date"> {{ exp.place }}</p>
                   </div>
-                  <div class="body">
-                    <p class="position">{{ exp.position }}</p>
-                    <p>{{ exp.institution }}</p>
+                  <div class="cv-body">
+                    <p class="cv-position">{{ exp.position }}</p>
+                    <p class="cv-institution">{{ exp.institution }}</p>
                     <ul>
                       {% for task in exp.tasks%}
                         <li>{{ task }}</li>

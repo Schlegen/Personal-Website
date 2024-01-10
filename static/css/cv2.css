@@ -1,6 +1,6 @@
 .timeline {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 10px 50px;
     position: relative;
   }
@@ -20,12 +20,12 @@
     display: table;
     clear: both;
   }
-  .entry {
+  .cv-entry {
     clear: both;
     text-align: left;
     position: relative;
   }
-  .entry .title {
+  .cv-entry .cv-title {
     /* margin-bottom: 0.3em; */
     float: left;
     width: 33%;
@@ -33,12 +33,12 @@
     text-align: right;
     position: relative;
   }
-  .entry .title:before {
+  .cv-entry .cv-title:before {
     content: '';
     position: absolute;
     width: 12px;
     height: 12px;
-    border: 3px solid salmon;
+    border: 3px solid #0000b3;
     transform: translatex(-2px);
     background-color: #fff;
     border-radius: 100%;
@@ -46,37 +46,53 @@
     right: -8px;
     z-index: 99;
   }
-  .entry .title h3 {
+  .cv-entry .cv-title h3 {
     margin: 0;
     font-size: 120%;
   }
-  .entry .title p {
+  .cv-entry .cv-title p {
     margin: 0;
     font-size: 100%;
   }
-  .entry .body {
+  .cv-entry .cv-body {
     margin: 0 0 3em;
     float: right;
     width: 66%;
     padding-left: 30px;
   }
-  .entry .body p {
+  .cv-entry .cv-body p {
     line-height: 1.4em;
   }
-  .entry .body p:first-child {
+  .cv-entry .cv-body p:first-child {
     margin-top: 0;
     font-weight: 400;
   }
-  .entry .body ul {
+  .cv-entry .cv-body ul {
     color: #aaa;
     padding-left: 0;
     list-style-type: none;
   }
-  .entry .body ul li:before {
+  .cv-entry .cv-body ul li:before {
     content: "–";
     margin-right: 0.5em;
   }
-
-  .position {
+  
+  p.cv-position {
     font-size: 20px;
+    /* font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    /* text-transform: uppercase; */
+  }
+
+  h3.cv-date {
+    font-size: 13px;
+    text-transform: none;
+    font-weight: bold;
+  }
+
+  p.cv-institution {
+    color:#0000b3;
+    font-weight: 550;
+    font-size: 13;
+    /* font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  /* text-transform: uppercase; */
   }

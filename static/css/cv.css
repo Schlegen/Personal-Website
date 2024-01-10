@@ -134,6 +134,13 @@ h1, .h1 {
 h2, .h2 {
   font-size: calc(1.475rem + 2.7vw);
 }
+
+h2.mb-5 {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  /* color: #0000b3; */
+}
+
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 3.5rem;
@@ -3610,7 +3617,7 @@ textarea.form-control-lg {
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
+  /* --bs-nav-link-font-weight: ; */
   /* --bs-nav-link-color: var(--bs-link-color); */
   /* --bs-nav-link-color: #000000; */
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
@@ -3786,7 +3793,7 @@ textarea.form-control-lg {
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
+  /* --bs-nav-link-font-weight: ; */
   --bs-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
@@ -4144,9 +4151,9 @@ textarea.form-control-lg {
 
 .navbar-dark {
   --bs-navbar-color: rgba(10, 10, 10, 1);
-  --bs-navbar-hover-color: rgba(140, 140, 140, 1);
+  --bs-navbar-hover-color: rgb(41, 4, 4);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color:rgba(0, 0, 0, 1);
+  --bs-navbar-active-color: #0000a3;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
@@ -7675,6 +7682,7 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 
+
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -8040,7 +8048,8 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
+  color: #0000b3 !important;
 }
 
 .text-secondary {
@@ -10970,7 +10979,7 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
