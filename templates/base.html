@@ -5,7 +5,7 @@
     <title>{{ common.first_name }} {{ common.last_name }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--fonts-->
     <link rel='stylesheet'
           href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700'
@@ -20,13 +20,15 @@
 <body>
 <div class="navbar-ul">
     <ul id="navbar-list" class="list-inline">
-        <li><a class="navbar-ref" href="/">Home</a></li>
+        <li><a class="navbar-ref" href="/">HOME</a></li>
         <li><a class="navbar-ref" href="/cv">CV</a></li>
-        <li><a class="navbar-ref" href="/projects">Projects</a></li>
+        <li><a class="navbar-ref" href="/projects">PROJECTS</a></li>
         <!-- <li><a class="navbar-ref" href="/reading">Reading</a></li> -->
     </ul>
 </div>
 {% block body %}
 {% endblock %}
 </body>
+
+<script src="static/js/base.js"></script>
 </html>

@@ -5,15 +5,26 @@ body {
 
 .navbar-ref {
   color: #808080;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
+
+.navbar-ref:hover, .navbar-ref:focus {
+  color: rgb(41, 4, 4);
+}
+
+.navbar-ref.active {
+  color: #0000a3;
+}
+
+
 
 .navbar-ul {
     background-color: white;
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    /* position: fixed; */
 }
 
 .list-inline {

@@ -42,13 +42,15 @@
     </div>
 </nav>
 <!-- Page Content-->
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" >
     <!-- About-->
-    <section class="resume-section" id="about" style="transform:translatey(-3rem)">
+    <div style="min-height:10rem;"></div>
+
+    <section class="resume-section" id="about">
         <div class="resume-section-content">
             <h1 class="mb-0" style="font-family: 'Roboto', sans-serif;">
-                Nicolas
-                <span class="text-primary">Schlegel</span>
+                Nicolas Schlegel
+                <!-- <span class="text-primary">Schlegel</span> -->
             </h1>
             <div class="subheading mb-5">
                 Research engineer in applied mathematics
@@ -75,12 +77,12 @@
               {% for exp in experiences %}
                 <div class="cv-entry">
                   <div class="cv-title">
-                    <h3 class="cv-date">{{ exp.date }}</h3>
+                    <p class="cv-date">{{ exp.date }}</p>
                     <p class="cv-place"> {{ exp.place }}</p>
                   </div>
                   <div class="cv-body">
-                    <p class="cv-position">{{ exp.position }}</p>
-                    <p class="cv-institution">{{ exp.institution }}</p>
+                    <p class="cv-position">{{ exp.position }}</p> 
+                    <p class="cv-institution"><a href="{{ exp.link }}" class="cv-link"> {{ exp.institution }}</a></p>
                     <ul>
                       {% for task in exp.tasks%}
                         <li>{{ task }}</li>
@@ -101,12 +103,12 @@
               {% for exp in education%}
                 <div class="cv-entry">
                   <div class="cv-title">
-                    <h3 class="cv-date">{{ exp.date }}</h3>
-                    <p class="cv-date"> {{ exp.place }}</p>
+                    <p class="cv-date">{{ exp.date }}</p>
+                    <p class="cv-place"> {{ exp.place }}</p>
                   </div>
                   <div class="cv-body">
                     <p class="cv-position">{{ exp.position }}</p>
-                    <p class="cv-institution">{{ exp.institution }}</p>
+                    <p class="cv-institution"><a href="{{ exp.link }}" class="cv-link"> {{ exp.institution }}</a></p>
                     <ul>
                       {% for task in exp.tasks%}
                         <li>{{ task }}</li>
@@ -152,6 +154,7 @@
         </div>
     </section>
     <hr class="m-0" />
+    <div style="min-height:10rem;"></div>
 </div>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -3,6 +3,7 @@
         "date": "Sep. 2018 - Sep. 2022",
         "place": "Champs-sur-Marne, France",
         "institution": "Ecole des Ponts Paristech (ENPC)",
+        "link": "https://www.ecoledesponts.fr/en",
         "position": "Master's Degree in Engineering",
         "tasks": ["Major in Applied Mathematics", 
                   "GPA : 3.95/4"]
@@ -11,6 +12,7 @@
         "date": "Sep. 2018 - Sep. 2022",
         "place": "Paris, France",
         "institution": "Master Parisien de Recherche Opérationnelle (MPRO)",
+        "link": "https://uma.ensta-paris.fr/mpro/master2",
         "position": "Master's of Science in Operations Research",
         "tasks": ["Master thesis on Robust Decarbonisation Policies, supervised by Michel De Lara (CERMICS, ENPC)", 
                   "GPA : 4/4"]
@@ -19,6 +21,7 @@
         "date": "Sep. 2015 - June 2018",
         "place": "Rouen, France",
         "institution": "Lycée Pierre Corneille",
+        "link":"",
         "position": "Preparatory class for entrance to Grandes Écoles - MPSI - MP*",
         "tasks": ["Intensive classes of Maths and Physics"]
     }

@@ -55,6 +55,7 @@ ul li a {
 
 .text-title {
   margin:0px;
+  text-transform: uppercase;
 }
 
 .title-logo{
@@ -142,7 +143,8 @@ ul li a {
 }
 #terminal .terminal {
   position: relative;
-  background: rgba(38, 38, 38, 0.8);
+  background: rgba(38, 38, 38, 0.92);
+  /* background: rgba(12, 40, 130, 1); */
   width: 80%;
   height: 260px;
   border-radius: 8px;

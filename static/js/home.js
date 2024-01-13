@@ -12,7 +12,7 @@ $(function() {
     showCursor: true,
     cursorChar: '_',
     autoInsertCss: true,
-    typeSpeed: 0.001,
+    typeSpeed: 0.002,
     startDelay: 50,
     loop: false,
     showCursor: false,
