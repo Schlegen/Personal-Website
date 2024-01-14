@@ -47,7 +47,7 @@
     border-radius: 100%;
     top: 15%;
     right: -8px;
-    z-index: 99;
+    /* z-index: 99; */
   }
 
   .cv-entry .cv-title p {

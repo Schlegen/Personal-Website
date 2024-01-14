@@ -7,6 +7,12 @@ body {
   color: #808080;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 900;
+  list-style-position: outside;
+  list-style-type: none;
+  outline-width: 0px;
+  text-align: left;
+  text-decoration-color: rgb(128, 128, 128);
 }
 
 .navbar-ref:hover, .navbar-ref:focus {
@@ -17,14 +23,14 @@ body {
   color: #0000a3;
 }
 
-
-
 .navbar-ul {
     background-color: white;
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
+    right:0;
+    z-index: 99;
 }
 
 .list-inline {
@@ -44,6 +50,7 @@ body {
     color: #808080;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    font-weight: 900;
   }
 
 }
