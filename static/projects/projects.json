@@ -1,273 +1,86 @@
 {
   "projects": [
     {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
+      "name": "Microgrid-Manager",
+      "link": "microgrid",
+      "date": "February 2020",
+      "short": "Controlling a battery in a microgrid equipped with a solar panel: Prediction of the net demand, Optimization of the load with command predictive control",
+      "status": "complete",
+      "weight": 1,
+      "github": "https://github.com/Schlegen/Microgrid-Manager",
+      "tags": [
+        "Optimisation", "Data-Science"
+      ],
+      "photos": [
+        "/static/projects/microgrid/microgrid.png",
+        "/static/projects/microgrid/optimisation_problem.png",  
+        "/static/projects/microgrid/prediction_command.png",
+        "/static/projects/microgrid/comparatif_couts.png"
+      ]
+    },
+    {
+      "name": "Cournot-Nash Equilibrium",
+      "link": "cournot-nash",
+      "date": "December 2021",
+      "short": "Compution of a Cournot-Nash equilibrium with proximal step method, under separable cost asumption",
+      "status": "complete",
+      "weight": 1,
+      "github": "https://github.com/Schlegen/Cournot-Nash-Equilibria",
+      "tags": [
+        "Game Theory", "Optimal Transport"
+      ],
+      "photos": [
+        "/static/projects/cournot-nash/result.png",
+        "/static/projects/cournot-nash/Proximal_step.png",
+        "/static/projects/cournot-nash/Gamma.png"
+      ]
+    },
+    {
+      "name": "K-cover Metaheuristic",
+      "link": "k-cover",
+      "date": "October 2021",
+      "short": "Heuristic resolution of a k-cover problem, with local search and genetic algorithm",
+      "status": "complete",
+      "weight": 1,
+      "github": "https://github.com/Schlegen/K-cover-Metaheuristic",
+      "tags": [
+        "Optimisation"
+      ],
+      "photos": [
+        "/static/projects/k-cover/example.png",
+        "/static/projects/k-cover/example.gif"
+      ]
+    },
+    {
+      "name": "Resnet GradCam",
+      "link": "grad-cam",
+      "date": "February 2022",
+      "short": "Implementation of a Gradcam filter to the Resnet neural network to highlight the zones it focuses on for its prediction",
       "status": "complete",
       "weight": 1,
       "tags": [
-        "tech"
+        "Data Science"
       ],
       "photos": [
-        "/static/projects/project-1/img.jpg"
+        "/static/projects/grad-cam/result_example.png"
       ]
-    },
+    }
+    ,
     {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
+      "name": "Movie Poster Classification",
+      "link": "movie-classifier",
+      "date": "February-June 2020",
+      "short": "Fine-tuning of a ResNet classifier, predicting the genre of a movie from its poster",
       "status": "complete",
       "weight": 1,
       "tags": [
-        "tech"
+        "Data Science"
       ],
       "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 1,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 1,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 1,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 2,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 1",
-      "link": "project-1",
-      "date": "01/02/2003",
-      "short": "A short description of the project ...",
-      "status": "complete",
-      "weight": 2,
-      "tags": [
-        "tech"
-      ],
-      "photos": [
-        "/static/projects/project-1/img.jpg"
-      ]
-    },
-    {
-      "name": "Project 2",
-      "link": "project-2",
-      "date": "04/05/2006",
-      "short": "A short description of the project ...",
-      "weight": 1,
-      "tags": [
-        "media"
-      ],
-      "photos": [
-        "/static/projects/project-2/img.jpg"
+        "/static/projects/movie-classifier/posters.jpg",
+        "/static/projects/movie-classifier/res1.png",
+        "/static/projects/movie-classifier/res2.png",
+        "/static/projects/movie-classifier/confusion.png"
       ]
     }
   ]

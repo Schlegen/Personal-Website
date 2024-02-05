@@ -92,3 +92,7 @@ span {
     width: auto !important;
   }
 }
+
+.project-git {
+  height : 18px;
+}

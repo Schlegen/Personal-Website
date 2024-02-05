@@ -9,6 +9,8 @@
 {% endblock %}
 
 {% block body %}
+
+<div style="min-height:10rem;"></div>
 <div class="container">
     <div class="wrapper fixed-wrapper">
         {% if 'photos' in project or 'videos' in project %}
@@ -60,23 +62,33 @@
         <div class="heading">
             <div class="title">{{ project['name'] }}</div>
 
-            <div class="date">{{ project['date'] }}</div>
+            <div class="date">
+                {{ project['date'] }}
+
+                {% if 'github' in project %}
+                &nbsp - &nbsp
+                <!-- <i class="fab fa-github"></i> -->
+                <a target="_blank" href="https://github.com/schlegen">
+                    <img class="project-git" src="../static/images/github.svg">
+                </a>
+                <a class="github" href={{project['github']}}>Find on Github</a>
+                {% endif %}
+                {% if 'arxiv' in project %}
+                &nbsp - &nbsp
+                <a class="github" href={{project['arxiv']}}>View on Arxiv</a>
+                {% endif %}
+                {% if 'playstore' in project %}
+                &nbsp - &nbsp
+                <a class="github" href={{project['playstore']}}>View on Google Play</a>
+                {% endif %}
+            </div>
+
 
             <div class="md-chips">
                 {% for tag in project['tags'] %}
                 <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
                 </div>
                 {% endfor %}
-            </div>
-
-            <div class="links">
-                {% if 'github' in project %}
-                <div><a class="github" href={{project['github']}}>Find on Github</a></div>
-                {% elif 'arxiv' in project %}
-                <div><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>
-                {% elif 'playstore' in project %}
-                <div><a class="github" href={{project['playstore']}}>View on Google Play</a></div>
-                {% endif %}
             </div>
         </div>
         <div class="content">{{ project['description'] | safe }}</div>
