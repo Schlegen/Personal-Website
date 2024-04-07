@@ -28,6 +28,8 @@ pip-log.txt
 
 #Mr Developer
 venv
+.venv/*
+
 *.pyc
 build
 
