@@ -10870,7 +10870,7 @@ h1, .h1 {
 p.lead {
   /* font-size: 1.15rem; */
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.85rem;
 }
 
 .subheading {
@@ -10987,4 +10987,12 @@ section.resume-section .resume-section-content {
 
 #sidenav {
   width: 20%;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a
+{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
 }

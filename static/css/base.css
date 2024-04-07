@@ -5,6 +5,7 @@ html {
 body {
   height:100vh;
   font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem !important;
 }
 
 .navbar-ref {
