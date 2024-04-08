@@ -5,8 +5,9 @@
         "institution": "RFF-CMCC European Institute on Economics and the Environment (Research laboratory)",
         "position": "Research Associate",
         "link": "https://www.eiee.org/",
-        "tasks": ["Involved of the continuous improvement of the integrated assessment model WITCH", 
-                  "In charge of the modeling of industrial sectors energy demand"]
+        "tasks": ["In charge of the energy demand sectorisation of the energy-economy-climate model WITCH",
+                  "Coupling of a macro-economic model of circular economy with a lowcarbon-lifestyle model"
+                ]
     },
     {
         "date": "April 2022 - June 2023",

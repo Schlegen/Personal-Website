@@ -3,7 +3,7 @@
     max-width: 80rem;
     padding: 10px 50px;
     position: relative;
-    font-size:1.2rem;
+    font-size:1.1rem;
   }
 
   .timeline:before {
@@ -53,11 +53,11 @@
 
   .cv-entry .cv-title p {
     margin: 0; 
-    font-size: 100%; 
+    /* font-size: 100%;  */
   }
 
   .cv-entry .cv-body {
-    margin: 0 0 1.5em;
+    /* margin: 0 0 1.5em; */
     /* margin: 0; */
     float: right;
     width: 66%;
@@ -82,7 +82,7 @@
     color: rgba(0, 0, 0, 0.5);
     padding-left: 0;
     list-style-type: none;
-    font-size: 0.65em;
+    font-size: 0.70em;
   }
 
   .cv-body ul {
@@ -94,15 +94,15 @@
     margin-right: 0.5em;
   }
 
+  .cv-place {
+    font-size: 0.7em; 
+  }
+
   p.cv-date {
-    font-size: 1.3em;
+    font-size: 0.8em;
     text-transform: none;
     font-family: Roboto;
     font-weight: bold;
-  }
-
-  p.cv-position {
-    font-size: 1.1em;
   }
 
   p.cv-position {
