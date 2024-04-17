@@ -10958,6 +10958,7 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
+  width: calc(100% - 3rem);
 }
 
 section.resume-section {
