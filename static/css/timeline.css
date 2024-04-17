@@ -1,18 +1,24 @@
 .timeline {
     width: 100%;
     max-width: 80rem;
-    padding: 10px 50px;
     position: relative;
     font-size:1.1rem;
+    padding: 1rem 4.1rem;
   }
+
+/* @media (min-width: 700px) {
+    .timeline {
+      padding: 10px 50px;
+    }
+  } */
 
   .timeline:before {
     content: '';
     position: absolute;
     top: 25px;
-    left: calc(33% + 15px);
+    left: calc(33% + 1.2rem);
     bottom: 18px;
-    width: 4px;
+    width: 0.3em;
     background: #ddd;
   }
   
@@ -32,7 +38,7 @@
     /* margin-bottom: 0.3em; */
     float: left;
     width: 33%;
-    padding-right: 30px;
+    padding-right: 2.7em;
     text-align: right;
     position: relative;
   }
@@ -40,14 +46,14 @@
   .cv-entry .cv-title:before {
     content: '';
     position: absolute;
-    width: 12px;
-    height: 12px;
-    border: 3px solid #0000a3;
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.2em solid #0000a3;
     transform: translatex(-2px);
     background-color: #fff;
     border-radius: 100%;
     top: 15%;
-    right: -8px;
+    right: -0.5em;
     /* z-index: 99; */
   }
 
@@ -61,7 +67,7 @@
     /* margin: 0; */
     float: right;
     width: 66%;
-    padding-left: 30px;
+    padding-left: 1.4em;
   }
 
   .cv-entry .cv-body:last-child {
