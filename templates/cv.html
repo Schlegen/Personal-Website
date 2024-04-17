@@ -142,7 +142,18 @@
                     </li>
                 {% endfor %}
             </ul>
-        </div>
+
+            <div style="min-height:2rem;"></div>
+
+            <div class="subheading mb-3">Languages</div>
+            <ul class="fa-ul mb-0" style="transform:translatex(3rem)">
+                {% for language in ["English (Fluent)", "French (Maternal)", "Italian (Basics)", "Spanish (Basics)"] %}
+                    <li>
+                        <span class="fa-li" style="color:#0000a3;"><i class="fas fa-check"></i></span> {{language}}
+                    </li>
+                {% endfor %}
+            </ul>
+      </div>
     </section>
     <!-- <hr class="m-0" /> -->
     <!-- Interests-->
