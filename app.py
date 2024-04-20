@@ -1,7 +1,6 @@
 import io
 import json
 import os
-
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -17,32 +16,25 @@ def index():
     return render_template('home.html', common=common)
 
 
-@app.route('/cv')
+@app.route('/cv.html')
 def cv():
     cv_experience = get_static_json("static/files/cv_experience.json")
     cv_education = get_static_json("static/files/cv_education.json")
     return render_template('cv.html', common=common, experiences=cv_experience, education=cv_education)
 
-
-@app.route('/reading')
-def reading():
-    data = get_static_json("static/files/reading.json")
-    return render_template('reading.html', common=common, data=data)
-
-
-@app.route('/projects')
+@app.route('/projects.html')
 def projects():
     data = get_static_json("static/projects/projects.json")['projects']
     data.sort(key=order_projects_by_weight, reverse=True)
 
-    tag = request.args.get('tags')
+    tag = request.args.get('tags/')
     if tag is not None:
         data = [project for project in data if tag.lower() in [project_tag.lower() for project_tag in project['tags']]]
 
     return render_template('projects.html', common=common, projects=data, tag=tag)
 
 
-@app.route('/experiences')
+@app.route('/experiences.html')
 def experiences():
     experiences = get_static_json("static/experiences/experiences.json")['experiences']
     experiences.sort(key=order_projects_by_weight, reverse=True)
@@ -55,8 +47,7 @@ def order_projects_by_weight(projects):
     except KeyError:
         return 0
 
-
-@app.route('/projects/<title>')
+@app.route('/projects/<title>.html')
 def project(title):
     projects = get_static_json("static/projects/projects.json")['projects']
     experiences = get_static_json("static/experiences/experiences.json")['experiences']
@@ -66,7 +57,7 @@ def project(title):
 
     if in_project is None and in_exp is None:
         return render_template('404.html'), 404
-    # fixme: choose the experience one for now, cuz I've done some shite hardcoding here.
+
     elif in_project is not None and in_exp is not None:
         selected = in_exp
     elif in_project is not None:

@@ -2,7 +2,7 @@
     <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
             {% if 'photos' in project %}
-            <img class="card-image activator" src={{project['photos'][0]}}/>
+            <img class="card-image activator" src="{{project['photos'][0]}}">
             {% else %}
             <img class="card-image activator" src="/static/images/projectx.png/">
             {% endif %}
@@ -24,7 +24,7 @@
                 <i class="material-icons right activator">more_vert</i>
             </div>
             <div>
-                <span><a href="/projects/{{project['link']}}">Read More</a></span>
+                <span><a href="/projects/{{project['link']}}.html">Read More</a></span>
                 {% if 'github' in project %}
                 <span><a class="github" href={{project['github']}}> | Github</a></span>
                 {% endif %}
