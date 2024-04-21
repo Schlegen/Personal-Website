@@ -10,9 +10,10 @@
 
 {% block body %}
 
-<div style="min-height:10rem;"></div>
+
 <div class="container">
     <div class="wrapper fixed-wrapper">
+        
         {% if 'photos' in project or 'videos' in project %}
         <div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" ;>
@@ -60,6 +61,7 @@
 
     <div class="wrapper scroll-wrapper">
         <div class="heading">
+            <div class="filler" style="min-height:22vh;"></div>
             <div class="title">{{ project['name'] }}</div>
 
             <div class="date">

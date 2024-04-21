@@ -9,7 +9,5 @@ def generate_project_urls():
     for proj in projects:
         yield 'project', {'title': proj['link']}
 
-
-
 if __name__ == '__main__':
     freezer.freeze()

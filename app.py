@@ -33,7 +33,6 @@ def projects():
 
     return render_template('projects.html', common=common, projects=data, tag=tag)
 
-
 @app.route('/experiences.html')
 def experiences():
     experiences = get_static_json("static/experiences/experiences.json")['experiences']
