@@ -236,6 +236,15 @@ ul li a {
   letter-spacing: 0.045em;
   margin-bottom: 1em;
 }
+
+#terminal .message form span {
+  font-size: 80%;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.045em;
+  margin-bottom: 1em;
+}
+
 #terminal .message span a {
   font-family: "Source Code Pro", monospace;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.75);

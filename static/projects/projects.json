@@ -9,13 +9,32 @@
       "weight": 1,
       "github": "https://github.com/Schlegen/Microgrid-Manager",
       "tags": [
-        "Optimisation", "Data-Science"
+        "Optimisation", "Data-Science", "Software development"
       ],
       "photos": [
         "/static/projects/microgrid/microgrid.png",
         "/static/projects/microgrid/optimisation_problem.png",  
         "/static/projects/microgrid/prediction_command.png",
         "/static/projects/microgrid/comparatif_couts.png"
+      ]
+    },
+    {
+      "name": "CES-Explorer",
+      "link": "ces-explorer",
+      "date": "April 2024",
+      "short": "Understand the Constant Elasticty function Substitution through interactive plots and a simple control problem",
+      "status": "complete",
+      "weight": 1,
+      "github": "https://github.com/Schlegen/CES-explorer",
+      "tags": [
+        "Economy", "Optimisation", "Software development"
+      ],
+      "photos": [
+        "/static/projects/ces-explorer/slide-6.png",
+        "/static/projects/ces-explorer/slide-1.png",
+        "/static/projects/ces-explorer/slide-2.png",
+        "/static/projects/ces-explorer/slide-3.png",
+        "/static/projects/ces-explorer/slide-5.png"
       ]
     },
     {

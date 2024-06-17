@@ -5,7 +5,7 @@ $(function() {
       "stat nicolas-schlegel<br/>" +
       "><span class='caret'>$</span> job: Research engineer <br/> ^100" +
       "><span class='caret'>$</span> institution: RFF-CMCC European Institute on Economics and the Environment <br/> ^100" +
-      "><span class='caret'>$</span> skills: Data Science, Optimization, Software Development, Economics <br/> ^100" +
+      "><span class='caret'>$</span> skills: Optimization, Data Science, Software Development, Economics, Environment <br/> ^100" +
       "><span class='caret'>$</span> hobbies: Rugby, Climbing, Swimming, Cooking, Tinkering<br/> ^300" +
       "><span class='caret'>$</span> now: Probably eating... <br/> ^300"
     ],

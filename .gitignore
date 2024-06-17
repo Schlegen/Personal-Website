@@ -35,3 +35,4 @@ build
 
 # some stuff people can upload
 static/uploads/
+build/
