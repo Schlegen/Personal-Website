@@ -237,7 +237,7 @@ ul li a {
   margin-bottom: 1em;
 }
 
-#terminal .message form span {
+#terminal .message form {
   font-size: 80%;
   font-weight: 300;
   line-height: 1.5;
