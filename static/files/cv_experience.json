@@ -15,7 +15,7 @@
         "institution": "Citepa (Air pollution center)",
         "link": "https://www.citepa.org/en/",
         "position": "Project Engineer in Applied Mathematics",
-        "tasks": ["Developed a Python library for planning and optimising the decarbonisation of economic agents under uncertainty",
+        "tasks": ["Developed a Python library for the definition of robust decarbonisation policies with stochastic optimization",
                 "Analysed French corporate carbon footprint database, assessed the carbon imprint of a major bank portfolio",
                 "Developed visualisation tools for corporate carbon footprints comparison"
             ]
